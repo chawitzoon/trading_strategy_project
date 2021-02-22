@@ -1,3 +1,3 @@
 # trading_strategy_project
 
-Fuck yeah
+Fuck yeah gg haha
