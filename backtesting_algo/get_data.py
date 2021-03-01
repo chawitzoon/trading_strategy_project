@@ -12,12 +12,14 @@ client = Client(config.API_KEY, config.API_SECRET)
 # for price in prices:
 #     print(price)
 
-csvfile = open('data/data_1day_BTCUSDT.csv', 'w', newline='')
+csvfile = open('data/data_15min_XRPUSDT.csv', 'w', newline='')
 candlestick_writer = csv.writer(csvfile, delimiter=',')
 
 # candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_15MINUTE, "1 Jan, 2020", "12 Jul, 2020")
-#candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1DAY, "1 Jan, 2020", "12 Jul, 2020")
-candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1DAY, "1 Jan, 2017", "1 Mar, 2021")
+# candlesticks = client.get_historical_klines("ETHUSDT", Client.KLINE_INTERVAL_1HOUR, "1 Jan, 2016", "1 Mar, 2021")
+# candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1DAY, "1 Jan, 2016", "1 Mar, 2021")
+candlesticks = client.get_historical_klines("XRPUSDT", Client.KLINE_INTERVAL_15MINUTE, "1 Jan, 2016", "1 Mar, 2021")
+
 
 for candlestick in  candlesticks:
     candlestick[0] = candlestick[0] / 1000
