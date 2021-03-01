@@ -11,4 +11,4 @@ Objective:
     - manual logic: use indicator: MACD, RSI, ...
     - machine learning method: train by history
 
-![example_figure](https://github.com/chawitzoon/trading_strategy_project/blob/main/backtesting_algo/20220301_MSI.png?raw=true)
+![example_figure](https://github.com/chawitzoon/trading_strategy_project/blob/main/backtesting_algo/figure_example/20220301_MSI.png?raw=true)
