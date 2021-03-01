@@ -2,7 +2,11 @@
 
 Start in March 2021
 Objective:
-- API part: retreive the data from API and push the order to market.
-- Algorithm part: try logic for choosing whether to buy or sell, when and how much.
-  - manual logic: use indicator: MACD, RSI, ...
-  - machine learning method: train by history
+- app_tradebot folder:
+   - retrieve the data from API (via python-binance, and stream from websocket client) and push the order to market
+   - interface to display buy and sell history, current holding assets,... (use flask or other frameworks)
+- backtesting_algo (Algorithm part):
+  - get_data: get the historical data (retrieved via python-binance)
+  - backtesting logics by backtrader library wrapper any other method
+    - manual logic: use indicator: MACD, RSI, ...
+    - machine learning method: train by history
